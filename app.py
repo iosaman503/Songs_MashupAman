@@ -176,13 +176,13 @@ def send_email(receiver_email, attachment_path):
         server.sendmail(sender_email, receiver_email, message.as_string())
 
 if __name__ == "__main__":
-    st.title("Mashup Web Service")
-    st.write("Enter the details below to create a mashup and receive it via email.")
+    st.title("Mashup Web Service by Aman Verma,TIET :)")
+    st.write("Enter the details below to create a mashup of songs and receive it via email.")
 
     form = st.form(key='my_form')
 
-    name = form.text_input(label='Enter singer name') 
-    output_file = form.text_input(label='Enter output file name')
+    name = form.text_input(label='Enter singer name 🎤') 
+    output_file = form.text_input(label='Enter output file name with .mp3 extension')
     num_videos =  form.number_input(label='Enter number of videos', min_value=1, step=1)
     cut_duration = form.number_input(label='Enter cut duration in seconds', min_value=1, step=1)
     email = form.text_input(label='Enter your email-id')
