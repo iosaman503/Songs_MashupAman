@@ -1,5 +1,4 @@
 pytube
 moviepy
 streamlit
-google-api-python-client
 youtube-search-python
